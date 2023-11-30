@@ -29,6 +29,7 @@ public class MainApp {
          System.out.println("Email = "+user.getEmail());
          System.out.println();
       }
+      System.out.println(userService.getUserByModelandSeries("Model1", 1111));
 
       context.close();
    }

@@ -3,7 +3,7 @@ package hiber.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "car")
+@Table(name = "cars")
 public class Car {
 
     @Id
@@ -49,5 +49,14 @@ public class Car {
 
     public void setOwner(User owner) {
         this.owner = owner;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "car_id=" + car_id +
+                ", model='" + model + '\'' +
+                ", series=" + series +
+                '}';
     }
 }
